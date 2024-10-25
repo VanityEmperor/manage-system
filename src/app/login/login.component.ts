@@ -45,10 +45,10 @@ export class LoginComponent implements OnInit {
   copy(account:string){
     navigator.clipboard.writeText(account).then(
        ()=> {
-        this.message.warning('复制成功');
+        this.message.success('复制成功');
       },
        ()=> {
-        this.message.warning('复制失败');
+        this.message.success('复制失败');
       },
     );
   }
