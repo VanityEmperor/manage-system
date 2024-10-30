@@ -1,3 +1,49 @@
-<p>
-  pages works!
-</p>
+<div class="pags-contain">
+  <aside>
+    <div class="head">
+      <img src="../../assets/mlogo.png" alt="">
+      <span>Angular admin</span>
+    </div>
+    <div class="line"></div>
+    <ul nz-menu nzMode="inline" nzTheme="dark">
+      <li nz-submenu nzTitle="首页配置">
+        <ul>
+          <li nz-menu-item>Option 11</li>
+          <li nz-menu-item>Option 12</li>
+          <li nz-menu-item>Option 13</li>
+        </ul>
+      </li>
+      <li nz-submenu nzTitle="模块管理">
+        <ul>
+          <li nz-menu-item>Option 11</li>
+          <li nz-menu-item>Option 12</li>
+          <li nz-menu-item>Option 13</li>
+        </ul>
+      </li>
+      <li nz-submenu nzTitle="系统管理">
+        <ul>
+          <li nz-menu-item>Option 11</li>
+          <li nz-menu-item>Option 12</li>
+          <li nz-menu-item>Option 13</li>
+        </ul>
+      </li>
+    </ul>
+  </aside>
+  <div class="content-box">
+    <header>
+      <div class="left"><span>系统介绍</span></div>
+      <div class="right">
+        <img  src="../../assets/avatar.image" alt="">
+        <span class="manage">超级管理员</span>
+        <span class="loginout" nz-icon nzType="logout" nzTheme="outline"></span>
+        <span  class="loginout-text">退出登录</span>
+      </div>
+    </header>
+    <main>
+      <div class="card">
+        <router-outlet></router-outlet>
+      </div>
+    </main>
+  </div>
+
+</div>
