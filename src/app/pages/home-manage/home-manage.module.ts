@@ -1,11 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HomeManageComponent } from './home-manage.component';
+import { HomeOneComponent } from './home-one/home-one.component';
+import { HomeManageRoutes } from './home-manage.routing';
+import { AntduiModule } from '../../antdui/antdui/antdui.module';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    HomeManageRoutes,
+    AntduiModule
   ],
-  declarations: [HomeManageComponent]
+  declarations: [HomeOneComponent]
 })
 export class HomeManageModule { }
