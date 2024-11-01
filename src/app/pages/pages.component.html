@@ -6,26 +6,27 @@
     </div>
     <div class="line"></div>
     <ul nz-menu nzMode="inline" nzTheme="dark">
-      <li nz-submenu nzTitle="首页配置">
+      <li nz-submenu nzTitle="首页配置" nzIcon="home">
         <ul>
-          <li nz-menu-item [routerLink]="['/pages/homeManage/homeOne']">首页展示</li>
-          <li nz-menu-item [routerLink]="['/pages/homeManage/homeTwo']">Option 12</li>
-          <li nz-menu-item>Option 13</li>
+          <li nz-menu-item [routerLink]="['/pages/homeManage/homeOne']">英雄管理</li>
+          <li nz-menu-item>百度一下</li>
+          <li nz-menu-item>404 页面</li>
         </ul>
       </li>
-      <li nz-submenu nzTitle="示例页栏目">
+      <li nz-submenu nzTitle="示例页栏目" nzIcon="product">
         <ul>
-          <li nz-menu-item [routerLink]="['/pages/exampleManage/exampleOne']">http-请求示例</li>
-          <li nz-menu-item>Option 12</li>
-          <li nz-menu-item>Option 13</li>
+          <li nz-menu-item [routerLink]="['/pages/exampleManage/exampleOne']">表单验证</li>
+          <li nz-menu-item>自定义组件</li>
+          <li nz-menu-item>tsx-示例</li>
         </ul>
       </li>
-      <li nz-submenu nzTitle="系统管理">
-        <ul>
-          <li nz-menu-item>Option 11</li>
-          <li nz-menu-item>Option 12</li>
-          <li nz-menu-item>Option 13</li>
-        </ul>
+      <li nz-menu-item>
+        <span nz-icon nzType="file-jpg"></span>
+        <span>svg-图标</span>
+      </li>
+      <li nz-menu-item>
+        <span nz-icon nzType="github"></span>
+        <span>项目地址</span>
       </li>
     </ul>
   </aside>
