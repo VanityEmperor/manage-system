@@ -23,7 +23,8 @@ import { NzAlertModule } from 'ng-zorro-antd/alert';
 import { NzMessageModule } from 'ng-zorro-antd/message';
 import { NzModalModule } from 'ng-zorro-antd/modal';
 import { NzSpinModule } from 'ng-zorro-antd/spin';
-
+import { NzDividerModule } from 'ng-zorro-antd/divider';
+import { NzSelectModule } from 'ng-zorro-antd/select';
 @NgModule({
   imports: [
     CommonModule
@@ -51,7 +52,9 @@ import { NzSpinModule } from 'ng-zorro-antd/spin';
     NzAlertModule,
     NzMessageModule,
     NzModalModule,
-    NzSpinModule
+    NzSpinModule,
+    NzDividerModule,
+    NzSelectModule,
   ],
   declarations: []
 })

@@ -5,7 +5,7 @@ const routes: Routes = [
     path: 'homeOne', 
     component: HomeOneComponent,
     data: {
-      breadcrumb: '首页展示'
+      breadcrumb: '英雄管理'
     }
    }
 ];
