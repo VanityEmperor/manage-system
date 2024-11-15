@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-pages',
@@ -7,12 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PagesComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
 
   baidu(){
     window.open("https://www.baidu.com","_blank")
+  }
+
+  jumpNotFound(){
+    this.router.navigateByUrl('/pages/homeManage/notFound');
   }
 }
