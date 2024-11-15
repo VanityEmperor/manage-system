@@ -4,6 +4,7 @@ import { PagesComponent } from './pages.component';
 import { PagesRoutes } from './pages.routing';
 import { AntduiModule } from '../antdui/antdui/antdui.module';
 import { RouterModule } from '@angular/router';
+import { PageNotFoundComponent } from '../PageNotFound/PageNotFound.component';
 @NgModule({
   imports: [
     CommonModule,
@@ -11,6 +12,6 @@ import { RouterModule } from '@angular/router';
     RouterModule,
     AntduiModule
   ],
-  declarations: [PagesComponent]
+  declarations: [PagesComponent,PageNotFoundComponent]
 })
 export class PagesModule { }
