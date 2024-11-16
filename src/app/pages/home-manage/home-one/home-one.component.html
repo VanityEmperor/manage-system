@@ -32,9 +32,9 @@
           <td>{{data?.remark ||'-'}}</td>
           <td>{{data?.createTime ||'-'}}</td>
           <td>
-            <a (click)="updateHero(data)">修改</a>
+            <a nz-button nzType="link" (click)="updateHero(data)">修改</a>
             <nz-divider nzType="vertical"></nz-divider>
-            <a (click)="deleteHero(data?.id,data?.name)">删除</a>
+            <a nz-button nzType="link" (click)="deleteHero(data?.id,data?.name)" nzDanger>删除</a>
           </td>
         </tr>
       }
@@ -43,7 +43,7 @@
 </nz-card>
 <ng-template #extraTemplate>
   <button nz-button nzType="primary" style="margin-right:15px;" (click)="addHero()"><span nz-icon nzType="plus" nzTheme="outline"></span>增加</button>
-  <button nz-button nzType="primary" (click)="batchDelete()"><span nz-icon nzType="delete" nzTheme="outline"></span>批量删除</button>
+  <button nz-button nzType="primary" nzDanger (click)="batchDelete()"><span nz-icon nzType="delete" nzTheme="outline"></span>批量删除</button>
 </ng-template>
 
 <nz-modal [(nzVisible)]="addHeroModal" nzTitle="添加英雄" (nzOnCancel)="addHeroCancel()" (nzOnOk)="addHeroOk()">
