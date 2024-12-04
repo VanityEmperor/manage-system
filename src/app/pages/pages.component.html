@@ -6,16 +6,16 @@
     </div>
     <div class="line"></div>
     <ul nz-menu nzMode="inline" nzTheme="dark">
-      <li nz-submenu nzTitle="首页配置" nzIcon="home" [nzOpen]="activeUrl.indexOf('/pages/homeManage')">
+      <li nz-submenu nzTitle="首页配置" nzIcon="home" [nzOpen]="activeUrl.includes('/pages/homeManage')">
         <ul>
-          <li nz-menu-item [routerLink]="['/pages/homeManage/homeOne']" [nzSelected]="activeUrl.indexOf('/pages/homeManage/homeOne')">英雄管理</li>
+          <li nz-menu-item [routerLink]="['/pages/homeManage/homeOne']" [nzSelected]="activeUrl.includes('/pages/homeManage/homeOne')">英雄管理</li>
           <li nz-menu-item (click)="baidu()">百度一下</li>
           <li nz-menu-item (click)="jumpNotFound()">404 页面</li>
         </ul>
       </li>
-      <li nz-submenu nzTitle="示例页栏目" nzIcon="product">
+      <li nz-submenu nzTitle="示例页栏目" nzIcon="product" [nzOpen]="activeUrl.includes('/pages/exampleManage')">
         <ul>
-          <li nz-menu-item [routerLink]="['/pages/exampleManage/exampleOne']">表单验证</li>
+          <li nz-menu-item [routerLink]="['/pages/exampleManage/exampleOne']"  [nzSelected]="activeUrl.includes('/pages/exampleManage/exampleOne')">表单验证</li>
           <li nz-menu-item>自定义组件</li>
           <li nz-menu-item>tsx-示例</li>
         </ul>

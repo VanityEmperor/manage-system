@@ -15,11 +15,13 @@ export class PagesComponent implements OnInit {
   }
 
   listenRouter(){
+    this.activeUrl = localStorage.getItem('active_url') || ''
     this.router.events.subscribe(event => {
       if (event instanceof NavigationStart) {
         // 导航开始时的处理逻辑
-        console.log('NavigationStart', event);
+        console.log('NavigationStart', event.url);
         this.activeUrl = event.url;
+        localStorage.setItem('active_url',this.activeUrl)
       }
     });
   }
